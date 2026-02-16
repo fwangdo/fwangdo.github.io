@@ -23,7 +23,7 @@ export default function Home() {
             fwangdo35@gmail.com
           </a>
           <a
-            href={`${process.env.NODE_ENV === 'production' ? '/homepage' : ''}/resume.pdf`}
+            href="/resume.pdf"
             className="text-gray-600 hover:text-blue-600 transition-colors"
           >
             Resume (PDF)
