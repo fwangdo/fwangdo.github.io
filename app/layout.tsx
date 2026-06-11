@@ -15,13 +15,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900 antialiased">
+      <body className="min-h-screen bg-stone-50 text-gray-900 antialiased">
         <Nav />
-        <main className="mx-auto max-w-2xl px-6 py-16 md:py-24">
+        <main className="mx-auto max-w-5xl px-5 py-12 md:px-8 md:py-20">
           {children}
         </main>
-        <footer className="border-t border-gray-200 mx-auto max-w-2xl px-6 py-6 text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} Doyeon Hwang
+        <footer className="mx-auto max-w-5xl border-t border-gray-200 px-5 py-8 text-sm text-gray-400 md:px-8">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <span>&copy; {new Date().getFullYear()} Doyeon Hwang</span>
+            <span>Program analysis, compilers, and solver testing</span>
+          </div>
         </footer>
       </body>
     </html>
